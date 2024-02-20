@@ -1,7 +1,7 @@
 *{
- padding: 0;  
- margin: 0; 
- box-sizing: border-box;
+    padding: 0;  
+    margin: 0; 
+    box-sizing: border-box;
 }
 /* MOBILE FIRST DESIGN */
 
@@ -17,64 +17,59 @@ nav img{
 }
 
 nav span {
-    /* margin-top: -30px; */
-    /* margin-left: 450px; */
     font-size: 55px;
     font-size: 70px;
- 
 }
 
 nav ul{
-   display: none;
-  margin-top: -40px;
+    display: none;
+    margin-top: -40px;
+ }
+
+ nav .btn1{
+    display: none;
+    margin-top: -35px;
+}
+
+.main{
+    display: flex;
+    padding-left: 20px;
+ }
+
+.box{
+    width:350px;
+    height: 350px;
+    border: 1px solid black;
+    border: none;
+}
+
+.box h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 44.8px;
+    text-indent: 1px;
+    text-transform: capitalize;
+    max-width: 500px;
+ }
+
+.box p{
+    padding-top: 30px;
+    line-height: 30px;
+    width: 240px;
+    font-size: 22px;
     }
 
-    nav .btn1{
-        display: none;
-        margin-top: -35px;
-    }
+.btn{
+    background-color: #1976d2;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold ;
+    padding: 16px 25px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
 
-    .main{
-        display: flex;
-        padding-left: 20px;
-    }
-
-    .box{
-        width:350px;
-        height: 350px;
-        border: 1px solid black;
-        border: none;
-    }
-
-    .box h1{
-        font-size: 30px;
-        line-height: 50px;
-        font-weight: bold;
-        width: 300px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .box p{
-        padding-top: 30px;
-        line-height: 30px;
-        width: 240px;
-        font-size: 22px;
-    }
-
-    .btn{
-        background-color: #1976d2;
-        margin-top: 50px;
-        color: white;
-        font-weight: bold ;
-        padding: 22px 29px;
-        border-radius: 10px;
-        border: none;
-        text-transform: uppercase;
-    }
-
-/* *{
-    border: 1px solid red;
-} */
     
 /* laptop */
     @media screen and (min-width: 1024px) {
@@ -83,20 +78,24 @@ nav ul{
      }   
 
      nav ul{
-     display: block;
+     display: flex;
      padding-top: -30px;
-     padding-left: 550px;
+     padding-left: 450px;
      }
 
      nav .btn1{
         display: block;
-        padding: 16px 55px;
-        margin-left: 100px;
+        padding: 15px 50px;
+        margin-bottom: 20px;
+        margin-left: 60px;
         border: none;
-        border-radius: 25px;
+        border-radius: 50px;
         cursor: pointer;
-        background-color: #2e79f1;
+        background-color: rgb(37, 108, 225);
         color: white;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
      }
     
      nav a {
@@ -155,16 +154,14 @@ nav ul{
 
      .box img{
         margin-top: -35px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
      }
 
      .btn1:hover{
         color: black;
         background-color: rgb(195, 110, 136);
      }
-
-
-
-
 
 }
   
